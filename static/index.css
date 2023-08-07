@@ -1,0 +1,116 @@
+body{ 
+    background-color: #636e7b;
+    color: white;
+    margin: 0;
+    padding : 0;
+}
+
+#outer-wrapper {
+    border-radius: 16px;
+    margin-top: 20px;
+}
+
+#left-outer-wrapper {
+    border-top-left-radius : 16px;
+    border-bottom-left-radius : 16px;
+    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.38);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    max-height: 100vh;
+}
+
+#right-outer-wrapper{
+    
+    border-top-right-radius : 16px;
+    border-bottom-right-radius : 16px;
+    background: rgba(255, 255, 255, 0.22);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    max-height: 100vh;
+}
+
+#profile-picture-wrapper {
+    clip-path: circle(40%);
+}
+
+@media only screen and (max-width: 768px) {
+    
+    #left-outer-wrapper {
+        border-radius: 0;
+    }
+
+    #right-outer-wrapper{
+        border-radius: 0;
+        max-height: 1000vh;
+    }
+
+    #profile-picture-wrapper {
+        clip-path: circle(30%);
+    }
+}
+
+ul > li {
+    margin-bottom: 10px;
+}
+
+li > span > img{
+    max-width: 5%;
+    display: inline-block;
+}
+
+.btn-custom-color{
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(3px);
+    color: black;
+}
+
+.btn-custom-color:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    outline: none;
+    border: none;
+    color: black;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(1px);
+    color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(3px);
+    color: black;
+    
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-link:hover{
+    color: #ffffff;
+}
+
+.project-containers{
+    max-height: 80vh; 
+    overflow-y: scroll;
+}
+
+.project-containers::-webkit-scrollbar {
+    width: 0.5em; /* Adjust the width as needed */
+}
+
+.project-content{
+    transition: transform .5s ease;
+}
+
+.project-content:hover{
+    opacity: 0.95;
+    transform: scale(1.01);
+    transition: transform .5s ease;
+}

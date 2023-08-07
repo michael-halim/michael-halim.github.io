@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.3/dist/tailwind.min.css" rel="stylesheet">
+    <title>Michael Halim's Personal Website</title>
+
+    <!-- Bootstrap JS Jquery CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="static/index.css">
+</head>
+
+<body>
+    <div class="container" id="outer-wrapper">
+        <div class="row d-flex">
+            <div class="col-md-3 pt-4 pb-4 px-4" id="left-outer-wrapper">
+                <div class="row sticky-top">
+                    <div class="col-md-12" id="profile-picture-wrapper">
+                        <img id="profile-picture" src="asset/profile.png" class="d-flex justify-content-center w-100">
+                    </div>
+                    <h4 class="mt-2 mx-1 d-flex justify-content-center d-md-block">Michael Halim Senatra</h4>
+                    <h6 class="mx-1 mb-5 d-flex justify-content-center d-md-block opacity-70">Software Engineer</h6>
+                    <div class="col-md-12 color-white d-none d-md-block">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="btn-about-me-tab" data-bs-toggle="pill" data-bs-target="#about-me-tab" type="button" role="tab">About Me</button>
+                            <button class="nav-link" id="btn-skills-tab" data-bs-toggle="pill" data-bs-target="#skills-tab" type="button" role="tab">Skills</button>
+                            <button class="nav-link" id="btn-projects-tab" data-bs-toggle="pill" data-bs-target="#projects-tab" type="button" role="tab">Projects</button>
+                            <button class="nav-link" id="btn-contact-me-tab" data-bs-toggle="pill" data-bs-target="#contact-me-tab" type="button" role="tab">Contact Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-md-9" id="right-outer-wrapper" >
+
+                <div class="col-12 d-block d-md-none">
+                    <div class="card mt-4 mx-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Profile</h5>
+                            <p class="card-text">Hi 👋🏻, I am a dedicated Software Engineer who proudly holds a degree from Petra
+                                Christian University 🎓, where I specialized in Data Analytics.</p>
+                            <p class="card-text">My journey consist of two years of hands-on, non-formal experience <a href="https://www.github.com/michael-halim">(see project)</a> and a year-long 
+                                formal experience, further deepening my understanding of Backend Development and its best practices.</p>
+                            <p class="card-text">Beyond my academic and professional journey, I am an active contributor to the global
+                                gig economy. My presence on reputable platforms like Fiverr and Upwork</p>
+                            
+                            <hr>
+                            <h5 class="card-title text-center">Technical Skills</h5>
+                            <p class="card-text">
+                                <ul class="p-0">
+                                    <li>
+                                        <span>
+                                            <img alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                                            <b>Python</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuenow="50" aria-valuemax="50">
+                                                <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img alt="Go" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+                                            <b>Go</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuenow="80" aria-valuemax="80">
+                                                <div class="progress-bar w-25 bg-dark ">1 Year(s)</div>
+                                                <div class="progress-bar w-25 bg-secondary ">1 Year(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img alt="Javascript"
+                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                            <b>Javascript</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" />
+                                            <b>Docker</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar w-12 bg-dark ">6 Mth(s)</div>
+                                                <div class="progress-bar w-12 bg-secondary ">6 Mth(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
+                                            <b>MySQL</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img alt="Redis" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg">
+                                            <b>Redis</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar w-12 bg-dark ">6 Mth(s)</div>
+                                                <div class="progress-bar w-12 bg-secondary ">6 Mth(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                                            <b>MongoDB</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar w-12 bg-dark ">6 Mth(s)</div>
+                                                <div class="progress-bar w-12 bg-secondary ">6 Mth(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                                            <b>Git</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img alt="Github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                                            <b>Github</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img alt="Linux Ubuntu" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" />
+                                            <b>Ubuntu</b>
+                                            <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar w-25 bg-dark ">1 Year(s)</div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </p>
+                            <hr>
+                            <h5 class="card-title text-center">Get In Touch !</h5>
+                            <p class="card-text">
+                                <div class="row">
+
+                                    <div class="col-4 mb-5">
+                                        <a class="d-flex justify-content-center" href="mailto:michaelhalimsenatra@gmail.com">
+                                            <img src="asset/gmail_logo.png" style="max-width: 50%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-5">
+                                        <a class="d-flex justify-content-center" href="https://www.linkedin.com/in/michaelhalims">
+                                            <img src="asset/linkedin_logo.png" style="max-width: 50%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-5">
+                                        <a class="d-flex justify-content-center" href="https://www.github.com/michael-halim">
+                                            <img src="asset/github_logo.png" style="max-width: 50%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="d-flex justify-content-center" href="https://stackoverflow.com/users/17550177/michael-halim">
+                                            <img src="asset/so_logo.png" style="max-width: 50%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="d-flex justify-content-center" 
+                                            href="https://www.fiverr.com/editionlimited?source=gig_page&gigs=slug%3Acreate-website-application-that-has-admin-page%2Cpckg_id%3A1">
+                                            <img src="asset/fiverr_logo.png" style="max-width: 50%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="d-flex justify-content-center" href="https://www.upwork.com/freelancers/~01b2c9d5588a0619c9">
+                                            <img src="asset/upwork_logo.png" style="max-width: 50%;">
+                                        </a>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content d-none d-md-block" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="about-me-tab" role="tabpanel">
+                        <div class="card mt-4 mx-3">
+                            <div class="card-body">
+                                <p class="card-text">Hi 👋🏻,  I am a dedicated Software Engineer who proudly holds a degree from Petra Christian
+                                    University 🎓, where I specialized in Data Analytics. With an unwavering passion for technology, I
+                                    have honed my skills and expertise through a comprehensive journey in the world of Backend Development.</p>
+                                <p class="card-text">My journey encompasses an enriching two years of hands-on, non-formal experience, where I had the
+                                    privilege to immerse myself in diverse projects, each contributing to the growth of my technical prowess. Building
+                                    on this foundation, I then embarked on a year-long formal experience, further deepening my understanding of Backend
+                                    Development's intricate nuances and best practices.</p>
+                                <p class="card-text">What truly sets me apart is my commitment to continuous improvement and innovation. By embracing
+                                    the ever-evolving landscape of technology, I have cultivated a unique ability to anticipate trends and adapt to
+                                    emerging paradigms. I find solace in transforming complex challenges into elegant, streamlined solutions that
+                                    elevate user experiences and drive operational excellence.</p>
+                                <p class="card-text">Beyond my academic and professional journey, I am an active contributor to the global gig economy.
+                                    My presence on reputable platforms like Fiverr and Upwork</p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="skills-tab" role="tabpanel">
+                        <div class="skills-container">
+                            <div class="col-md-12 skills-wrapper">
+                                <div class="card mt-4 mx-3 mb-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Technical Skills</h5>
+                                        <p class="card-text">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                                                                <b>Python</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuenow="50" aria-valuemax="50">
+                                                                    <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Go" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+                                                                <b>Go</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuenow="80" aria-valuemax="80">
+                                                                    <div class="progress-bar w-25 bg-dark ">1 Year(s)</div>
+                                                                    <div class="progress-bar w-25 bg-secondary ">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
+                                                                <b>PHP</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuenow="80" aria-valuemax="80">
+                                                                    <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                                    <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Javascript"
+                                                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                                                <b>Javascript</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                                    <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Selenium" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" />
+                                                                <b>Selenium</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-25 bg-dark ">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                                                                <b>Git</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                                    <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                                                                <b>Github</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                                    <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Linux Ubuntu" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" />
+                                                                <b>Ubuntu</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-25 bg-dark ">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Django" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg">
+                                                                <b>Django</b>
+                                                                <div class="progress mt-1" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                                    <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Go-Gin" src="https://raw.githubusercontent.com/gin-gonic/logo/master/color.png" />
+                                                                <b>Gin</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-25 bg-dark ">1 Year(s)</div>
+                                                                    <div class="progress-bar w-12 bg-secondary ">6 Mth(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" />
+                                                                <b>Docker</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-12 bg-dark ">6 Mth(s)</div>
+                                                                    <div class="progress-bar w-12 bg-secondary ">6 Mth(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="NuxtJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" />
+                                                                <b>Nuxt JS</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-12 bg-secondary ">6 Mth(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
+                                                                <b>MySQL</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                                    <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="PostgreSQL"
+                                                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg">
+                                                                <b>PostgreSQL</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-50 bg-dark">2 Year(s)</div>
+                                                                    <div class="progress-bar w-25 bg-secondary">1 Year(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="Redis" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg">
+                                                                <b>Redis</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-12 bg-dark ">6 Mth(s)</div>
+                                                                    <div class="progress-bar w-12 bg-secondary ">6 Mth(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                <img alt="MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                                                                <b>MongoDB</b>
+                                                                <div class="progress mt-2" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar w-12 bg-dark ">6 Mth(s)</div>
+                                                                    <div class="progress-bar w-12 bg-secondary ">6 Mth(s)</div>
+                                                                </div>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="projects-tab" role="tabpanel">
+                        <div class="project-containers">
+                            <div class="col-md-12 project-wrapper">
+                                <a href="https://github.com/michael-halim/testing-hosting-skripsi" class="text-decoration-none">
+                                    <div class="card mt-4 mx-3 project-content">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hybrid Recommender System for Interior Products and Services</h5>
+                                            <p class="card-text">Aug 2022 - Mar 2023</p>
+                                            <p class="card-text">Hybrid Recommender System for Final Project Thesis. The data of this thesis is collected from multiple websites and
+                                            scraped once a week automatically. The data is collected, preprocessed, and trasfered to database. It also has updating
+                                            new and deleting old data concept. The data then displayed on website where everyone can access. The website recorded
+                                            every activity and recommend based on user interaction. Recommendation phase does automatically every so hours.</p>
+                                            <span class="badge rounded-pill text-bg-light p-2">Python</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">Selenium</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">Django</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">Javascript (Jquery)</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">PostgreSQL</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">Ubuntu</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/michael-halim/dmds-final-project" class="text-decoration-none">
+                                    <div class="card mt-4 mx-3 project-content">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Data Modelling for Data Science Final Project</h5>
+                                            <p class="card-text">Feb 2022 - Jun 2022</p>
+                                            <p class="card-text">The primary objective of this project is to analyze data from three distinct databases, namely SQLite, Neo4J, and
+                                            Mongodb, and present it visually on a website using Flask. The project aims to effectively utilize the data present in
+                                            these databases and present it in a format that is easily understandable and accessible to users. By analyzing the data
+                                            and presenting it visually, the project seeks to provide insights that can aid in decision-making processes and help
+                                            users make informed decisions.</p>
+                                            <span class="badge rounded-pill text-bg-light p-2">Python</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">Flask</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">SQLite</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">Neo4J</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">MongoDB</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">Bootstrap</span>
+                                            <span class="badge rounded-pill text-bg-light p-2">Javascript (Jquery)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/michael-halim/big-data-netflix" class="text-decoration-none">
+                                    <div class="card mt-4 mx-3 project-content">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Recommender System for Netflix Movies</h5>
+                                            <p class="card-text">Feb 2022 - Jun 2022</p>
+                                            <p class="card-text">The final project in the domain of Big Data involves the creation of a recommendation system utilizing the Alternating
+                                            Least Squares algorithm. The recommendation system is designed to use explicit data such as ratings as input to the
+                                            algorithm. The massive Netflix data is processed using Pyspark to achieve this objective. By utilizing this approach,
+                                            the project aims to provide a recommendation system that can generate accurate recommendations for users based on their
+                                            preferences and ratings, which can improve their overall user experience.</p>
+                                            <span class="badge rounded-pill text-bg-light p-2">Pyspark</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/michael-halim/crypto-project" class="text-decoration-none">
+                                    <div class="card mt-4 mb-5 mx-3 project-content">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fintech Application with Cryptography Implementation in Python using SHA-256, LSFR, and AES-128</h5>
+                                            <p class="card-text">Aug 2021 - Dec 2021</p>
+                                            <p class="card-text">The final project for the Cryptography class involves the creation of a fintech application. The main objective of this
+                                            project is to implement at least three security concepts into the application. These concepts include using SHA-256 and
+                                            salt to encrypt passwords, utilizing AES-128 to encrypt the database file, implementing LSFR to generate random numbers,
+                                            and adding two-factor authentication security using Google Authenticator to log into user accounts. The use of these
+                                            security measures aims to enhance the application's protection against potential security threats, such as hacking and
+                                            unauthorized access to sensitive information.</p>
+                                            <span class="badge rounded-pill text-bg-light p-2">Python</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-me-tab" role="tabpanel">
+                        <div class="card mt-4 mx-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Get In Touch !</h5>
+                                <div class="row mt-5">
+                                    <div class="col-md-4 ">
+                                        <a class="d-flex justify-content-center" href="mailto:michaelhalimsenatra@gmail.com"><img src="asset/gmail_logo.png" alt="" style="max-width: 25%;"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="d-flex justify-content-center" href="https://www.linkedin.com/in/michaelhalims"><img src="asset/linkedin_logo.png" alt="" style="max-width: 25%;"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="d-flex justify-content-center" href="https://www.github.com/michael-halim"><img src="asset/github_logo.png" alt="" style="max-width: 25%;"></a>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-md-4">
+                                        <a class="d-flex justify-content-center" href="https://stackoverflow.com/users/17550177/michael-halim"><img src="asset/so_logo.png" alt="" style="max-width: 25%;"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="d-flex justify-content-center" href="https://www.fiverr.com/editionlimited?source=gig_page&gigs=slug%3Acreate-website-application-that-has-admin-page%2Cpckg_id%3A1"><img src="asset/fiverr_logo.png" alt="" style="max-width: 25%;"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="d-flex justify-content-center" href="https://www.upwork.com/freelancers/~01b2c9d5588a0619c9"><img src="asset/upwork_logo.png" alt="" style="max-width: 25%;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
